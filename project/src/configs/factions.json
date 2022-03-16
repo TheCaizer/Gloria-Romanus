@@ -1,0 +1,51 @@
+{
+    "Romans":{
+        "factionSpritePath": "images/CS2511Sprites_No_Background/Flags/Roman/RomanFlag.png"
+    },
+    "Carthaginians":{
+        "factionSpritePath": "images/CS2511Sprites_No_Background/Flags/Carthage/CathageFlag (1).png"
+
+    },
+    "Gauls":{
+        "factionSpritePath": "images/CS2511Sprites_No_Background/Flags/Gallic/GallicFlag.png"
+    },
+    "Celtic Britons":{
+        "factionSpritePath": "images/CS2511Sprites_No_Background/Flags/Celtic/CelticFlag.png"
+    },
+    "Spanish":{
+        "factionSpritePath": "images/CS2511Sprites_No_Background/Flags/Spanish/SpanishFlag.png"
+    },
+    "Numidians":{
+        "factionSpritePath": "images/CS2511Sprites_No_Background/Swordsman/Egyptian/Swordsman_Alt_NB.png"
+    },
+    "Egyptians":{
+        "factionSpritePath": "images/CS2511Sprites_No_Background/Flags/Egyptian/EgyptianFlag.png"
+    },
+    "Seleucid Empire":{
+        "factionSpritePath": "images/legionary.png"
+    },
+    "Pontus":{
+        "factionSpritePath": "images/Celtic_Druid.png"
+    },
+    "Amenians":{
+        "factionSpritePath": "images/CS2511Sprites_No_Background/Spearman/Spearman_NB.png"
+    },
+    "Parthians":{
+        "factionSpritePath": "images/CS2511Sprites_No_Background/NetFighter/NetFighter_NB.png"
+    },
+    "Germanics":{
+        "factionSpritePath": "images/CS2511Sprites_No_Background/Flagbearer/Egyptian/Egyptian_Flagbearer_NB.png"
+    },
+    "Greek City States":{
+        "factionSpritePath": "images/CS2511Sprites_No_Background/Flagbearer/FlagBearer_NB.png"
+    },
+    "Macedonians":{
+        "factionSpritePath": "images/CS2511Sprites_No_Background/Flagbearer/Roman/RomanFlagbearer_NB.png"
+    },
+    "Thracians":{
+        "factionSpritePath": "images/CS2511Sprites_No_Background/Crossbowman/Crossbowman_NB.png"
+    },
+    "Dacians":{
+        "factionSpritePath": "images/CS2511Sprites_No_Background/Camel/CamelArcher/CamelArcher_NB.png"
+    }
+}

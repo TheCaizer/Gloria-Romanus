@@ -1,0 +1,4 @@
+{
+    "compositeGoals": ["AND", "OR"],
+    "basicGoals": ["TREASURY", "WEALTH", "CONQUEST"]
+}

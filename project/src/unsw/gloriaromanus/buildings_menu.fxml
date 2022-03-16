@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Background?>
+<?import javafx.scene.layout.BackgroundFill?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+
+<VBox fx:id="buildingsMenu" maxWidth="250" spacing="10" styleClass="panel-region" stylesheets="/unsw/gloriaromanus/style.css" StackPane.alignment="TOP_LEFT" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unsw.gloriaromanus.BuildingsMenuController">
+    <padding>
+        <Insets topRightBottomLeft="10" />
+    </padding>
+    <background>
+        <Background>
+            <fills>
+                <BackgroundFill>
+                    <fill>
+                        <Color opacity="0.3" />
+                    </fill>
+                </BackgroundFill>
+            </fills>
+        </Background>
+    </background>
+    <HBox alignment="CENTER">
+        <VBox alignment="CENTER">
+            <Label text="Selected Province" />
+            <TextField fx:id="buildingsSourceText" editable="false" text="" />
+        </VBox>
+    </HBox>
+   <HBox alignment="CENTER">
+      <children>
+         <VBox alignment="CENTER">
+            <children>
+               <Label text="Current Construction " />
+               <Label text="(Double Click to Cancel)" />
+               <TextField fx:id="currentConstructionText" editable="false" onMouseClicked="#handleConstructionClick" text="" />
+            </children>
+         </VBox>
+      </children>
+   </HBox>
+   <VBox alignment="TOP_CENTER">
+      <children>
+         <Label text="Select Infrastructure" />
+         <ComboBox fx:id="buildingsChoiceBox" prefHeight="27.0" prefWidth="187.0" />
+      </children>
+   </VBox>
+   <HBox alignment="TOP_CENTER" spacing="10.0">
+      <children>
+         <VBox alignment="TOP_RIGHT" spacing="5.0">
+            <children>
+               <Label text="Current Level:" />
+               <Label text="Upgrade Cost:" />
+               <Label text="Upgrade Time:" />
+               <Label text="Refund Amount:" />
+               <Button mnemonicParsing="false" onAction="#handleBuildingConstruct" text="Construct" />
+            </children>
+         </VBox>
+         <VBox spacing="5.0">
+            <children>
+               <Label fx:id="levelLabel" />
+               <Label fx:id="costLabel" />
+               <Label fx:id="timeLabel" />
+               <Label fx:id="refundLabel" />
+               <Button mnemonicParsing="false" onAction="#handleBuildingDestroy" text="Destroy" />
+            </children>
+         </VBox>
+      </children>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+      <padding>
+         <Insets bottom="5.0" top="5.0" />
+      </padding>
+   </HBox>
+    <VBox>
+        <Label text="Output from interactions" />
+        <TextArea fx:id="buildingsOutput" editable="false" prefWidth="230.0" text="" />
+    </VBox>
+    <Button onAction="#clickedSwitchMenu" text="Back" />
+</VBox>

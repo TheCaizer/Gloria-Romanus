@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane fx:id="MainMenuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unsw.gloriaromanus.StartMenuController">
+   <children>
+      <Text fx:id="TitleCard" layoutX="80.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gloria Romanus">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <VBox layoutX="35.0" layoutY="200.0" prefHeight="111.0" prefWidth="99.0" spacing="10.0">
+         <children>
+            <Button fx:id="newGameButton" mnemonicParsing="false" onAction="#handleNewGamePress" prefHeight="26.0" prefWidth="96.0" text="New Game" />
+            <Button fx:id="loadGameButton" mnemonicParsing="false" onAction="#handleLoadGamePress" prefHeight="26.0" prefWidth="94.0" text="Load Game" />
+            <Button fx:id="mainQuitButton" mnemonicParsing="false" onAction="#handleQuitPress" prefHeight="27.0" prefWidth="94.0" text="Quit" />
+         </children>
+      </VBox>
+      <StackPane fx:id="mainMenuOptionsPane" layoutX="150.0" layoutY="129.0" prefHeight="253.0" prefWidth="414.0">
+         <children>
+            <Pane fx:id="loadOptionsPane" prefHeight="200.0" prefWidth="200.0" visible="false">
+               <children>
+                  <ListView fx:id="saveFileListView" layoutX="21.0" layoutY="54.0" prefHeight="185.0" prefWidth="144.0" />
+                  <Button fx:id="loadButton" layoutX="354.0" layoutY="212.0" mnemonicParsing="false" onAction="#handleLoadPress" text="Load" />
+                  <Label layoutX="50.0" layoutY="26.0" text="Selete Save File" />
+               </children>
+            </Pane>
+            <Pane fx:id="startOptionsPane" prefHeight="200.0" prefWidth="200.0" visible="false">
+               <children>
+                  <Label layoutX="51.0" layoutY="26.0" text="Select Factions" />
+                  <Button fx:id="startButton" layoutX="355.0" layoutY="212.0" mnemonicParsing="false" onAction="#handleStartPress" text="Start" />
+                  <ListView fx:id="factionsListView" layoutX="21.0" layoutY="54.0" prefHeight="185.0" prefWidth="144.0" />
+                  <Label layoutX="226.0" layoutY="26.0" text="Set Victory Conditions" />
+                  <Button layoutX="187.0" layoutY="212.0" mnemonicParsing="false" onAction="#handleGenerateConditions" text="Generate Conditions" />
+                  <TextArea fx:id="conditionsText" layoutX="187.0" layoutY="54.0" prefHeight="97.0" prefWidth="200.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </TextArea>
+                  <TextField fx:id="initialWealthText" alignment="CENTER_RIGHT" layoutX="273.0" layoutY="169.0" prefHeight="27.0" prefWidth="110.0" />
+                  <Label layoutX="188.0" layoutY="174.0" prefHeight="17.0" prefWidth="76.0" text="Initial Gold" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</Pane>

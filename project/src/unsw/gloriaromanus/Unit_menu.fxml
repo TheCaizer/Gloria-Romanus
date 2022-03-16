@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Background?>
+<?import javafx.scene.layout.BackgroundFill?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="unitMenu" maxWidth="308.0" prefHeight="628.0" prefWidth="308.0" spacing="10" styleClass="panel-region" stylesheets="/unsw/gloriaromanus/style.css" StackPane.alignment="TOP_LEFT" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unsw.gloriaromanus.UnitMenuController">
+    <padding>
+        <Insets topRightBottomLeft="10" />
+    </padding>
+    <background>
+        <Background>
+            <fills>
+                <BackgroundFill>
+                    <fill>
+                        <Color opacity="0.3" />
+                    </fill>
+                </BackgroundFill>
+            </fills>
+        </Background>
+    </background>
+   <VBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="288.0">
+      <children>
+         <Label alignment="TOP_CENTER" text="Selected Province">
+            <font>
+               <Font name="System Italic" size="18.0" />
+            </font>
+         </Label>
+         <TextField fx:id="provinceUnitField" alignment="CENTER" editable="false" />
+      </children>
+   </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+         <children>
+            <Label text="Hire Units">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <HBox alignment="TOP_CENTER" prefHeight="22.0" prefWidth="320.0" spacing="100.0">
+               <children>
+                  <VBox prefHeight="80.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Infantry" />
+                        <ChoiceBox fx:id="InfantryChoice" onAction="#selectedChoiceMenuI" prefWidth="150.0" />
+                        <Button fx:id="InfantryHire" mnemonicParsing="false" onAction="#clickInfantry" text="Hire" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="80.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Cavlary" />
+                        <ChoiceBox fx:id="CavlaryChoice" onAction="#selectedChoiceMenuC" prefHeight="26.0" prefWidth="125.0" />
+                        <Button fx:id="CavlaryHire" mnemonicParsing="false" onAction="#clickCavlary" text="Hire" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0">
+               <children>
+                  <VBox prefHeight="80.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Spearmen" />
+                        <ChoiceBox fx:id="SpearmenChoice" onAction="#selectedChoiceMenuS" prefHeight="26.0" prefWidth="118.0" />
+                        <Button fx:id="SpearmenHire" mnemonicParsing="false" onAction="#clickSpearmen" text="Hire" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="80.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Artillery" />
+                        <ChoiceBox fx:id="ArtilleryChoice" onAction="#selectedChoiceMenuA" prefHeight="26.0" prefWidth="121.0" />
+                        <Button fx:id="ArtilleryHire" mnemonicParsing="false" onAction="#clickArtillery" text="Hire" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   <Label text="Unit Hut">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font>
+   </Label>
+   <ListView fx:id="viewUnitHut" prefHeight="45.0" prefWidth="288.0" />
+   <Button fx:id="buttonCancelTroop" mnemonicParsing="false" onAction="#clickCancelTroop" text="Cancel Troop" />
+   <Label text="Output">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font>
+   </Label>
+      <TextArea fx:id="unitTextArea" editable="false" prefHeight="138.0" prefWidth="288.0" />
+   <HBox prefHeight="47.0" prefWidth="288.0" spacing="110.0">
+      <children>
+         <Button onAction="#clickedSwitchMenu" text="Back" />
+         <Button onAction="#clearTextArea" text="Clear Output" />
+      </children>
+   </HBox>
+</VBox>

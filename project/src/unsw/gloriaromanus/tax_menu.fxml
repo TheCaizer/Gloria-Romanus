@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Background?>
+<?import javafx.scene.layout.BackgroundFill?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="taxMenu" maxWidth="308.0" prefHeight="501.0" prefWidth="308.0" spacing="10" styleClass="panel-region" stylesheets="/unsw/gloriaromanus/style.css" StackPane.alignment="TOP_LEFT" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unsw.gloriaromanus.TaxMenuController">
+    <padding>
+        <Insets topRightBottomLeft="10" />
+    </padding>
+    <background>
+        <Background>
+            <fills>
+                <BackgroundFill>
+                    <fill>
+                        <Color opacity="0.3" />
+                    </fill>
+                </BackgroundFill>
+            </fills>
+        </Background>
+    </background>
+   <VBox alignment="TOP_CENTER" prefHeight="50.0" prefWidth="288.0">
+      <children>
+         <Label text="Selected Province">
+            <font>
+               <Font name="System Italic" size="18.0" />
+            </font>
+         </Label>
+         <TextField fx:id="provinceTaxField" alignment="TOP_CENTER" editable="false" prefHeight="20.0" prefWidth="288.0" />
+      </children>
+   </VBox>
+   <VBox prefHeight="60.0" prefWidth="288.0">
+      <children>
+         <Label text="Faction Wealth">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </Label>
+         <TextField fx:id="textFactionWealth" editable="false" prefHeight="26.0" prefWidth="125.0" />
+      </children>
+   </VBox>
+   <HBox alignment="TOP_CENTER" prefHeight="35.0" prefWidth="221.0" spacing="30.0">
+      <children>
+         <VBox prefHeight="42.0" prefWidth="130.0">
+            <children>
+               <Label prefHeight="16.0" prefWidth="143.0" text="Province Growth">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font></Label>
+               <TextField fx:id="textGrowth" editable="false" prefHeight="46.0" prefWidth="288.0" />
+            </children>
+         </VBox>
+         <VBox prefHeight="42.0" prefWidth="130.0">
+            <children>
+               <Label prefHeight="16.0" prefWidth="128.0" text="Province Wealth">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font></Label>
+               <TextField fx:id="textProvinceWealth" editable="false" prefHeight="26.0" prefWidth="134.0" />
+            </children>
+         </VBox>
+      </children>
+   </HBox>
+   <VBox prefHeight="68.0" prefWidth="166.0" spacing="10.0">
+      <children>
+         <Label prefHeight="16.0" prefWidth="143.0" text="Province Tax Rate">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font></Label>
+         <ChoiceBox fx:id="taxChoiceBox" prefWidth="150.0" />
+         <Button fx:id="buttonTax" mnemonicParsing="false" onAction="#handleTaxChoice" text="Set Tax Rate">
+            <font>
+               <Font name="System Italic" size="13.0" />
+            </font></Button>
+      </children>
+   </VBox>
+   <Label text="Output">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font>
+   </Label>
+   <TextArea fx:id="taxOutput" editable="false" prefHeight="132.0" prefWidth="288.0" />
+   <HBox prefHeight="72.0" prefWidth="288.0" spacing="110.0">
+      <children>
+          <Button onAction="#clickedSwitchMenu" text="Back" />
+         <Button fx:id="taxClear" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#clearTextArea" text="Clear Output" />
+      </children>
+   </HBox>
+</VBox>

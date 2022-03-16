@@ -1,0 +1,169 @@
+{
+    "Market": [
+        {
+            "level": 0,
+            "baseWealthCost": 0,
+            "baseTurnCost": 0,
+            "wealthBonus": 0,
+            "growthBonus": 0,
+            "factionConstrWealthCostReduction": 0
+        },
+        {
+            "level": 1,
+            "baseWealthCost": 60,
+            "baseTurnCost": 4,
+            "wealthBonus": 30,
+            "growthBonus": 5,
+            "factionConstrWealthCostReduction": 2
+        },
+        {
+            "level": 2,
+            "baseWealthCost": 100,
+            "baseTurnCost": 5,
+            "wealthBonus": 50,
+            "growthBonus": 10,
+            "factionConstrWealthCostReduction": 3
+        },
+        {
+            "level": 3,
+            "baseWealthCost": 140,
+            "baseTurnCost": 6,
+            "wealthBonus": 70,
+            "growthBonus": 15,
+            "factionConstrWealthCostReduction": 4
+        },
+        {
+            "level": 4,
+            "baseWealthCost": 200,
+            "baseTurnCost": 7,
+            "wealthBonus": 100,
+            "growthBonus": 20,
+            "factionConstrWealthCostReduction": 5
+        },
+        {
+            "level": 5,
+            "baseWealthCost": 400,
+            "baseTurnCost": 10,
+            "wealthBonus": 200,
+            "growthBonus": 30,
+            "factionConstrWealthCostReduction": 10
+        }
+    ],
+    "Road": [
+        {
+            "level": 0,
+            "type": "None",
+            "baseWealthCost": 0,
+            "baseTurnCost": 0,
+            "provinceMovementCost": 4
+        },
+        {
+            "level": 1,
+            "type": "Dirt",
+            "baseWealthCost": 200,
+            "baseTurnCost": 5,
+            "provinceMovementCost": 3
+        },
+        {
+            "level": 2,
+            "type": "Paved",
+            "baseWealthCost": 300,
+            "baseTurnCost": 6,
+            "provinceMovementCost": 2
+        }
+    ],
+    "Mine": [
+        {
+            "level": 0,
+            "baseWealthCost": 0,
+            "baseTurnCost": 0,
+            "wealthBonus": 0,
+            "growthBonus": 0,
+            "factionSoldierWealthCostReduction": 0,
+            "factionConstrTurnCostReduction": 0
+        },
+        {
+            "level": 1,
+            "baseWealthCost": 50,
+            "baseTurnCost": 5,
+            "wealthBonus": 30,
+            "growthBonus": 10,
+            "factionSoldierWealthCostReduction": 3,
+            "factionConstrTurnCostReduction": 0
+        },
+        {
+            "level": 2,
+            "baseWealthCost": 90,
+            "baseTurnCost": 6,
+            "wealthBonus": 55,
+            "growthBonus": 15,
+            "factionSoldierWealthCostReduction": 5,
+            "factionConstrTurnCostReduction": 0
+        },
+        {
+            "level": 3,
+            "baseWealthCost": 130,
+            "baseTurnCost": 7,
+            "wealthBonus": 80,
+            "growthBonus": 20,
+            "factionSoldierWealthCostReduction": 8,
+            "factionConstrTurnCostReduction": 0
+        },
+        {
+            "level": 4,
+            "baseWealthCost": 300,
+            "baseTurnCost": 10,
+            "wealthBonus": 150,
+            "growthBonus": 40,
+            "factionSoldierWealthCostReduction": 10,
+            "factionConstrTurnCostReduction": 1
+        }
+    ],
+    "Port": [
+        {
+            "level": 0,
+            "baseWealthCost": 0,
+            "baseTurnCost": 0,
+            "wealthBonus": 0,
+            "growthBonus": 0,
+            "coastWealthBonus": 0,
+            "coastGrowthBonus": 0
+        },
+        {
+            "level": 1,
+            "baseWealthCost": 60,
+            "baseTurnCost": 3,
+            "wealthBonus": 20,
+            "growthBonus": 5,
+            "coastWealthBonus": 5,
+            "coastGrowthBonus": 5
+        },
+        {
+            "level": 2,
+            "baseWealthCost": 110,
+            "baseTurnCost": 5,
+            "wealthBonus": 30,
+            "growthBonus": 10,
+            "coastWealthBonus": 8,
+            "coastGrowthBonus": 8
+        },
+        {
+            "level": 3,
+            "baseWealthCost": 200,
+            "baseTurnCost": 6,
+            "wealthBonus": 40,
+            "growthBonus": 15,
+            "coastWealthBonus": 13,
+            "coastGrowthBonus": 13
+        },
+        {
+            "level": 4,
+            "baseWealthCost": 300,
+            "baseTurnCost": 8,
+            "wealthBonus": 50,
+            "growthBonus": 20,
+            "coastWealthBonus": 20,
+            "coastGrowthBonus": 20
+        }
+    ]
+}

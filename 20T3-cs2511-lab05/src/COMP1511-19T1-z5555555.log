@@ -1,0 +1,14 @@
+Nov. 10, 2020 3:35:33 PM unsw.enrolment.Grade setMark
+INFO: Marks Updated: Ass1 = 60
+
+Nov. 10, 2020 3:35:33 PM unsw.enrolment.Grade setMark
+INFO: Marks Updated: milestone1 = 60
+
+Nov. 10, 2020 3:35:33 PM unsw.enrolment.Grade setMark
+INFO: Marks Updated: milestone2 = 60
+
+Nov. 10, 2020 3:35:33 PM unsw.enrolment.Grade setMark
+INFO: Marks Updated: FinalExam = 60
+
+Nov. 10, 2020 3:35:33 PM unsw.enrolment.Enrolment writeChange
+INFO: Marks Updated: Assignments = 60

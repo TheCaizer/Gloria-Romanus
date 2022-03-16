@@ -1,0 +1,23 @@
+{ "command": "flight", "id": "flight1", "dropzone": "Teyvat", "starttime": "2019-12-02T10:15", "endtime": "2019-12-02T10:35", "maxload": 6 }
+{ "command": "flight", "id": "flight2", "dropzone": "Teyvat", "starttime": "2019-12-03T10:25", "endtime": "2019-12-03T10:40", "maxload": 6 }
+{ "command": "flight", "id": "flight3", "dropzone": "Teyvat", "starttime": "2019-12-04T10:40", "endtime": "2019-12-04T11:00", "maxload": 6 }
+
+{ "command": "skydiver", "skydiver": "Paimon", "licence": "tandem-master"}
+
+{ "command": "request", "type": "tandem", "id": "Paimon wants to try tandem by herself", "starttime": "2019-12-02T10:00", "passenger": "Paimon" }
+
+{ "command": "request", "type": "training", "id": "Paimon wants to train herself self-training", "starttime": "2019-12-03T09:00", "trainee": "Paimon" }
+
+{ "command": "request", "type": "fun", "id": "Ok I guess Paimon can just have fun herself", "starttime": "2019-12-03T10:15", "skydivers": ["Paimon"] }
+
+{ "command": "change", "type": "fun", "id": "Ok I guess Paimon can just have fun herself", "starttime": "2019-12-02T10:10", "skydivers": ["Paimon"] }
+
+{ "command": "request", "type": "fun", "id": "It was so fun she wants to do it again", "starttime": "2019-12-04T10:00", "skydivers": ["Paimon"] }
+
+{ "command": "cancel", "id": "It was so fun she wants to do it again" }
+
+{ "command": "request", "type": "fun", "id": "Paimon changes his mind and wants another jump", "starttime": "2019-12-04T10:40", "skydivers": ["Paimon"] }
+
+{ "command": "jump-run", "id": "flight1" }
+{ "command": "jump-run", "id": "flight2" }
+{ "command": "jump-run", "id": "flight3" }

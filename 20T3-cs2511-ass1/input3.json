@@ -1,0 +1,49 @@
+{ "command": "flight", "id": "flight1", "dropzone": "Paris", "starttime": "1900-01-02T13:15", "endtime": "1900-01-02T13:35", "maxload": 4 }
+{ "command": "flight", "id": "flight2", "dropzone": "Dagger Fall", "starttime": "1900-01-02T13:25", "endtime": "1900-01-02T13:40", "maxload": 0 }
+{ "command": "flight", "id": "flight3", "dropzone": "Morrow Wind", "starttime": "1900-01-02T13:40", "endtime": "1900-01-02T11:00", "maxload": 9 }
+{ "command": "flight", "id": "flight4", "dropzone": "Paris", "starttime": "1900-01-03T13:15", "endtime": "1900-01-03T13:35", "maxload": 4 }
+{ "command": "flight", "id": "flight5", "dropzone": "Skyrim", "starttime": "1900-01-03T13:25", "endtime": "1900-01-03T13:40", "maxload": 3 }
+{ "command": "flight", "id": "flight6", "dropzone": "Paris", "starttime": "1900-01-03T13:40", "endtime": "1900-01-03T11:00", "maxload": 2 }
+{ "command": "flight", "id": "flight7", "dropzone": "Sinnoh", "starttime": "1900-01-04T17:00", "endtime": "1900-01-04T17:10", "maxload": 5 }
+{ "command": "flight", "id": "flight8", "dropzone": "Paris", "starttime": "1900-01-04T16:00", "endtime": "1900-01-04T16:10", "maxload": 7 }
+{ "command": "flight", "id": "flight9", "dropzone": "Skyrim", "starttime": "1900-01-05T16:00", "endtime": "1900-01-04T16:10", "maxload": 6 }
+{ "command": "flight", "id": "flight10", "dropzone": "Sinnoh", "starttime": "1900-01-05T16:00", "endtime": "1900-01-04T16:10", "maxload": 7 }
+
+{ "command": "skydiver", "skydiver": "Xi", "licence": "student"}
+{ "command": "skydiver", "skydiver": "Frump", "licence": "tandem-master"}
+{ "command": "skydiver", "skydiver": "Otama", "licence": "student"}
+{ "command": "skydiver", "skydiver": "Natd", "licence": "instructor", "dropzone": "Paris"}
+{ "command": "skydiver", "skydiver": "Lucy", "licence": "instructor", "dropzone": "Paris"}
+{ "command": "skydiver", "skydiver": "Pineapple Apple Pen", "licence": "instructor", "dropzone": "Paris"}
+{ "command": "skydiver", "skydiver": "Yourat", "licence": "licenced-jumper", "dropzone": "Paris"}
+
+{ "command": "request", "type": "tandem", "id": "arrived just in time for tandem", "starttime": "1900-01-03T13:35", "passenger": "Natd" }
+
+{ "command": "request", "type": "fun", "id": "Solo Jump", "starttime": "1900-01-02T13:40", "skydivers": ["Xi"] }
+
+{ "command": "request", "type": "training", "id": "Frump needs to train to be a better person", "starttime": "1900-01-04T16:00", "trainee": "Frump" }
+
+{ "command": "request", "type": "fun", "id": "The Boys, but Lucy unfortunately has tandem booked with Alice, he wont be able to pack in time!", "starttime": "1900-01-03T13:15", "skydivers": ["Xi", "Lucy", "Yourat"] }
+
+{ "command": "request", "type": "fun", "id": "The Boys", "starttime": "1900-01-02T13:15", "skydivers": ["Xi", "Lucy", "Yourat"] }
+
+{ "command": "request", "type": "fun", "id": "Solo Jump", "starttime": "1900-01-02T13:40", "skydivers": ["Xi"] }
+
+{ "command": "change", "type": "fun", "id": "The Boys", "starttime": "1900-01-02T13:15", "skydivers": ["Xi", "Lucy", "Yourat", "Otama"] }
+
+{ "command": "change", "type": "fun", "id": "The Boys", "starttime": "1900-01-02T13:15", "skydivers": ["Xi", "Lucy", "Yourat", "Otama", "Pineapple Apple Pen"] }
+
+{ "command": "request", "type": "fun", "id": "Xi got ditched by the boys", "starttime": "1900-01-04T17:00", "skydivers": ["Xi"] }
+
+{ "command": "cancel", "id": "Xi got ditched by the boys" }
+
+{ "command": "jump-run", "id": "flight1" }
+{ "command": "jump-run", "id": "flight2" }
+{ "command": "jump-run", "id": "flight3" }
+{ "command": "jump-run", "id": "flight4" }
+{ "command": "jump-run", "id": "flight5" }
+{ "command": "jump-run", "id": "flight6" }
+{ "command": "jump-run", "id": "flight7" }
+{ "command": "jump-run", "id": "flight8" }
+{ "command": "jump-run", "id": "flight9" }
+{ "command": "jump-run", "id": "flight10" }

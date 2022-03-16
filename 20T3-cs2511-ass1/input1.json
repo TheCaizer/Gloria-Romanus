@@ -1,0 +1,36 @@
+{ "command": "flight", "id": "flight1", "dropzone": "Sydney", "starttime": "2007-12-02T10:15", "endtime": "2007-12-02T10:35", "maxload": 4 }
+{ "command": "flight", "id": "flight2", "dropzone": "Sydney", "starttime": "2007-12-02T10:25", "endtime": "2007-12-02T10:40", "maxload": 7 }
+{ "command": "flight", "id": "flight3", "dropzone": "Sydney", "starttime": "2007-12-02T10:40", "endtime": "2007-12-02T11:00", "maxload": 5 }
+{ "command": "flight", "id": "flight4", "dropzone": "Sydney", "starttime": "2007-12-03T10:15", "endtime": "2007-12-03T10:35", "maxload": 4 }
+{ "command": "flight", "id": "flight5", "dropzone": "Sydney", "starttime": "2007-12-03T10:25", "endtime": "2007-12-03T10:40", "maxload": 7 }
+{ "command": "flight", "id": "flight6", "dropzone": "Sydney", "starttime": "2007-12-03T10:40", "endtime": "2007-12-03T11:00", "maxload": 5 }
+{ "command": "flight", "id": "flight7", "dropzone": "Brisbane", "starttime": "2007-12-04T17:00", "endtime": "2007-12-04T17:10", "maxload": 5 }
+{ "command": "flight", "id": "flight8", "dropzone": "Sydney", "starttime": "2007-12-04T16:00", "endtime": "2007-12-04T16:10", "maxload": 5 }
+{ "command": "skydiver", "skydiver": "Jim", "licence": "licenced-jumper"}
+{ "command": "skydiver", "skydiver": "Tim", "licence": "student"}
+{ "command": "skydiver", "skydiver": "Det", "licence": "licenced-jumper"}
+{ "command": "skydiver", "skydiver": "Manny", "licence": "tandem-master", "dropzone": "Sydney"}
+{ "command": "skydiver", "skydiver": "Bob", "licence": "tandem-master", "dropzone": "Sydney"}
+{ "command": "skydiver", "skydiver": "Jimbo", "licence": "tandem-master", "dropzone": "Sydney"}
+{ "command": "skydiver", "skydiver": "Xiao", "licence": "instructor", "dropzone": "Sydney"}
+
+{ "command": "request", "type": "tandem", "id": "Manny just wants to jump", "starttime": "2007-12-03T10:40", "passenger": "Manny" }
+{ "command": "request", "type": "tandem", "id": "Just let him jump", "starttime": "2007-12-03T10:35", "passenger": "Manny" }
+{ "command": "request", "type": "training", "id": "Tim wants to train", "starttime": "2007-12-04T17:00", "trainee": "Tim" }
+{ "command": "request", "type": "training", "id": "He wants to train", "starttime": "2007-12-04T16:00", "trainee": "Tim" }
+{ "command": "request", "type": "fun", "id": "They want to jump", "starttime": "2007-12-03T10:15", "skydivers": ["Jim", "Bob", "Xiao"] }
+{ "command": "request", "type": "fun", "id": "They also want to jump", "starttime": "2007-12-02T10:15", "skydivers": ["Jim", "Bob", "Xiao"] }
+{ "command": "request", "type": "fun", "id": "Cant jump", "starttime": "2007-12-02T10:40", "skydivers": ["Jim"] }
+{ "command": "change", "type": "fun", "id": "They also want to jump", "starttime": "2007-12-02T10:15", "skydivers": ["Jim", "Bob", "Xiao", "Det"] }
+{ "command": "change", "type": "fun", "id": "They also want to jump", "starttime": "2007-12-02T10:15", "skydivers": ["Jim", "Bob", "Xiao", "Det", "Jimbo"] }
+{ "command": "request", "type": "fun", "id": "Ill probably cancel this jump", "starttime": "2007-12-04T17:00", "skydivers": ["Jim"] }
+{ "command": "cancel", "id": "Ill probably cancel this jump" }
+{ "command": "request", "type": "fun", "id": "Jim changes his mind and wants another jump", "starttime": "2007-12-03T10:40", "skydivers": ["Jim"] }
+{ "command": "jump-run", "id": "flight1" }
+{ "command": "jump-run", "id": "flight2" }
+{ "command": "jump-run", "id": "flight3" }
+{ "command": "jump-run", "id": "flight4" }
+{ "command": "jump-run", "id": "flight5" }
+{ "command": "jump-run", "id": "flight6" }
+{ "command": "jump-run", "id": "flight7" }
+{ "command": "jump-run", "id": "flight8" }

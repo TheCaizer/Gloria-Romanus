@@ -1,0 +1,16 @@
+*.class
+*.log
+hs_err_pid*
+/bin/
+/lib/
+/build/
+/.gradle/
+/resources/
+/jniLibs/
+resources
+jniLibs
+test.gradle
+saveGames/
+.vscode/launch.json
+configs/
+*.DS_Store
